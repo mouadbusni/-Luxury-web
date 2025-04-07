@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | EternalElegance</title>
+    <meta name="description" content="Get in touch with our luxury watch experts for inquiries, appointments, or customer service.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #fef3c7;
+            color: #d97706;
+        }
+        .map-container {
+            height: 400px;
+            background-color: #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header (Consistent with other pages) -->
+    <header class="bg-black text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold heading-font">EternalElegance</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#collections" class="hover:text-amber-200 transition">Collections</a>
+                <a href="about.html" class="hover:text-amber-200 transition">About</a>
+                <a href="blog.html" class="hover:text-amber-200 transition">Journal</a>
+                <a href="contact.html" class="text-amber-200 hover:text-amber-300 transition">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <a href="#" class="hover:text-amber-200 transition">
+                    <i class="fas fa-search text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-amber-200 transition">
+                    <i class="fas fa-shopping-bag text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 flex items-center justify-center bg-gray-900 overflow-hidden">
+        <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+             alt="Watchmaker at work" 
+             class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <div class="container mx-auto px-6 relative z-10 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 heading-font">Contact Us</h1>
+            <p class="text-xl max-w-2xl mx-auto">Our experts are ready to assist with any inquiries</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl font-bold mb-8 heading-font">Send Us a Message</h2>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                <input type="text" id="first-name" class="w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-amber-500 focus:border-amber-500">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                <input type="text" id="last-name" class="w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-amber-500 focus:border-amber-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-amber-500 focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-amber-500 focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <select id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-amber-500 focus:border-amber-500">
+                                <option>General Inquiry</option>
+                                <option>Product Information</option>
+                                <option>Appointment Request</option>
+                                <option>Customer Service</option>
+                                <option>Wholesale Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-amber-500 focus:border-amber-500"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-sm font-medium transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl font-bold mb-8 heading-font">Visit Our Boutique</h2>
+                    
+                    <!-- Map Placeholder -->
+                    <div class="map-container rounded-sm shadow-md mb-8 flex items-center justify-center">
+                        <div class="text-center p-6">
+                            <i class="fas fa-map-marker-alt text-4xl text-gray-400 mb-4"></i>
+                            <p class="text-gray-500">Map would be displayed here</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Cards -->
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="contact-icon rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1 heading-font">Our Address</h3>
+                                <p class="text-gray-700">123 Watch Avenue<br>New York, NY 10001<br>United States</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="contact-icon rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1 heading-font">Phone</h3>
+                                <p class="text-gray-700">+1 (555) 123-4567</p>
+                                <p class="text-sm text-gray-500">Monday-Friday, 9:00 AM - 6:00 PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="contact-icon rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1 heading-font">Email</h3>
+                                <p class="text-gray-700">info@eternalelegance.com</p>
+                                <p class="text-sm text-gray-500">Response within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="contact-icon rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-calendar-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1 heading-font">Appointments</h3>
+                                <p class="text-gray-700">Private viewings available by appointment</p>
+                                <a href="#" class="text-amber-600 hover:text-amber-700 text-sm font-medium transition">Book a consultation →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-center mb-12 heading-font">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-lg font-medium">Do you offer international shipping?</h3>
+                        <i class="fas fa-chevron-down text-amber-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-700">Yes, we ship worldwide via FedEx International Priority. Shipping costs and delivery times vary by destination. All international shipments include insurance and require a signature upon delivery.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-lg font-medium">What is your return policy?</h3>
+                        <i class="fas fa-chevron-down text-amber-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-700">We offer a 14-day return policy for unworn watches in their original condition with all packaging and documentation. Custom or engraved items cannot be returned. Please contact our team to initiate a return.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-lg font-medium">Do you provide authentication certificates?</h3>
+                        <i class="fas fa-chevron-down text-amber-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-700">Every watch from our collection comes with a certificate of authenticity from the manufacturer and our own authentication document. Vintage pieces include additional provenance documentation when available.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="text-lg font-medium">Can I trade in my current watch?</h3>
+                        <i class="fas fa-chevron-down text-amber-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-700">We accept trade-ins of luxury watches from reputable brands. Please email clear photos of your watch, including the movement if possible, along with any documentation to our concierge team for an appraisal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Consistent with other pages) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading-font">EternalElegance</h3>
+                    <p class="text-gray-400 mb-4">Curating exceptional timepieces since 1995.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html#men" class="text-gray-400 hover:text-white transition">Men's Watches</a></li>
+                        <li><a href="products.html#women" class="text-gray-400 hover:text-white transition">Women's Watches</a></li>
+                        <li><a href="products.html#limited" class="text-gray-400 hover:text-white transition">Limited Editions</a></li>
+                        <li><a href="products.html#accessories" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-bold mb-4">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition">Journal</a></li>
+                        <li><a href="contact.html" class="text-amber-400 hover:text-amber-300 transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">123 Watch Avenue</li>
+                        <li class="text-gray-400">New York, NY 10001</li>
+                        <li class="text-gray-400">+1 (555) 123-4567</li>
+                        <li class="text-gray-400">info@eternalelegance.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 EternalElegance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ toggle functionality
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>
