@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collections | EternalElegance</title>
+    <meta name="description" content="Explore our curated selection of luxury watches for men and women, limited editions, and premium accessories.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header (Consistent with other pages) -->
+    <header class="bg-black text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold heading-font">EternalElegance</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#collections" class="text-amber-200 hover:text-amber-300 transition">Collections</a>
+                <a href="about.html" class="hover:text-amber-200 transition">About</a>
+                <a href="index.html#blog" class="hover:text-amber-200 transition">Journal</a>
+                <a href="index.html#contact" class="hover:text-amber-200 transition">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <a href="#" class="hover:text-amber-200 transition">
+                    <i class="fas fa-search text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-amber-200 transition">
+                    <i class="fas fa-shopping-bag text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <section class="sticky top-16 z-40 bg-white shadow-sm">
+        <div class="container mx-auto px-6">
+            <div class="flex overflow-x-auto space-x-8 py-4 hide-scrollbar">
+                <a href="#men" class="whitespace-nowrap px-4 py-2 border-b-2 border-transparent hover:border-amber-500 hover:text-amber-600 transition">Men's Watches</a>
+                <a href="#women" class="whitespace-nowrap px-4 py-2 border-b-2 border-transparent hover:border-amber-500 hover:text-amber-600 transition">Women's Watches</a>
+                <a href="#limited" class="whitespace-nowrap px-4 py-2 border-b-2 border-transparent hover:border-amber-500 hover:text-amber-600 transition">Limited Editions</a>
+                <a href="#accessories" class="whitespace-nowrap px-4 py-2 border-b-2 border-transparent hover:border-amber-500 hover:text-amber-600 transition">Accessories</a>
+                <a href="#new" class="whitespace-nowrap px-4 py-2 border-b-2 border-amber-500 text-amber-600">New Arrivals</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="relative h-64 md:h-80 flex items-center justify-center bg-gray-900 overflow-hidden">
+        <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+             alt="Luxury watch collection" 
+             class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <div class="container mx-auto px-6 relative z-10 text-center text-white">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 heading-font">Our Collections</h1>
+            <p class="text-lg">Curated selection of the world's finest timepieces</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="py-6 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-gray-700">Showing 24 of 187 products</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <select class="appearance-none bg-white border border-gray-300 rounded-sm pl-4 pr-8 py-2 focus:outline-none focus:ring-1 focus:ring-amber-500">
+                            <option>Sort by: Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest Arrivals</option>
+                            <option>Most Popular</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <button class="p-2 text-gray-700 hover:text-amber-600 transition">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="p-2 text-gray-700 hover:text-amber-600 transition">
+                        <i class="fas fa-th-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <main class="py-12">
+        <div class="container mx-auto px-6">
+            <!-- New Arrivals -->
+            <section id="new" class="mb-20">
+                <h2 class="text-2xl font-bold mb-8 heading-font">New Arrivals</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Chronograph Master watch" 
+                                 class="w-full h-full object-cover product-image transition duration-500">
+                            <div class="absolute top-4 right-4 bg-amber-600 text-white text-xs font-bold px-2 py-1 rounded-sm">NEW</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Chronograph Master</h3>
+                            <p class="text-gray-600 text-sm mb-2">Limited Edition</p>
+                            <div class="flex items-center mb-3">
+                                <div class="text-amber-400 text-sm">★★★★★</div>
+                                <span class="text-gray-500 text-xs ml-1">(24)</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$24,500</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Vintage Diver watch" 
+                                 class="w-full h-full object-cover product-image transition duration-500">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Vintage Diver</h3>
+                            <p class="text-gray-600 text-sm mb-2">1967 Restoration</p>
+                            <div class="flex items-center mb-3">
+                                <div class="text-amber-400 text-sm">★★★★★</div>
+                                <span class="text-gray-500 text-xs ml-1">(18)</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$32,000</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Grand Complication watch" 
+                                 class="w-full h-full object-cover product-image transition duration-500">
+                            <div class="absolute top-4 right-4 bg-amber-600 text-white text-xs font-bold px-2 py-1 rounded-sm">NEW</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Grand Complication</h3>
+                            <p class="text-gray-600 text-sm mb-2">Perpetual Calendar</p>
+                            <div class="flex items-center mb-3">
+                                <div class="text-amber-400 text-sm">★★★★★</div>
+                                <span class="text-gray-500 text-xs ml-1">(12)</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$68,500</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Elegance Petite watch" 
+                                 class="w-full h-full object-cover product-image transition duration-500">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Elegance Petite</h3>
+                            <p class="text-gray-600 text-sm mb-2">Mother-of-Pearl Dial</p>
+                            <div class="flex items-center mb-3">
+                                <div class="text-amber-400 text-sm">★★★★★</div>
+                                <span class="text-gray-500 text-xs ml-1">(31)</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$18,200</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Men's Watches -->
+            <section id="men" class="mb-20">
+                <h2 class="text-2xl font-bold mb-8 heading-font">Men's Watches</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Product 5 -->
+                    <div class="product-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Classic Automatic watch" 
+                                 class="w-full h-full object-cover product-image transition duration-500">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Classic Automatic</h3>
+                            <p class="text-gray-600 text-sm mb-2">40mm Stainless Steel</p>
+                            <div class="flex items-center mb-3">
+                                <div class="text-amber-400 text-sm">★★★★★</div>
+                                <span class="text-gray-500 text-xs ml-1">(42)</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$9,800</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="product-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/341523/pexels-photo-341523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Aviator Chronograph watch" 
+                                 class="w-full h-full object-cover product-image transition duration-500">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Aviator Chronograph</h3>
+                            <p class="text-gray-600 text-sm mb-2">Pilot's Watch</p>
+                            <div class="flex items-center mb-3">
+                                <div class="text-amber-400 text-sm">★★★★★</div>
+                                <span class="text-gray-500 text-xs ml-1">(27)</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$12,500</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 7 -->
+                    <div class="product-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Moonphase watch" 
+                                 class="w-full h-full object-cover product-image transition duration-500">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Moonphase</h3>
+                            <p class="text-gray-600 text-sm mb-2">Complication Series</p>
+                            <div class="flex items-center mb-3">
+                                <div class="text-amber-400 text-sm">★★★★★</div>
+                                <span class="text-gray-500 text-xs ml-1">(15)</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$28,700</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 8 -->
+                    <div class="product-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Skeleton Tourbillon watch" 
+                                 class="w-full h-full object-cover product-image transition duration-500">
+                            <div class="absolute top-4 right-4 bg-black text-white text-xs font-bold px-2 py-1 rounded-sm">LIMITED</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Skeleton Tourbillon</h3>
+                            <p class="text-gray-600 text-sm mb-2">Handcrafted Movement</p>
+                            <div class="flex items-center mb-3">
+                                <div class="text-amber-400 text-sm">★★★★★</div>
+                                <span class="text-gray-500 text-xs ml-1">(8)</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$95,000</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-12">
+                <nav class="flex items-center space-x-2">
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm bg-amber-600 text-white">1</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm border border-gray-300 text-gray-700 hover:bg-gray-100 transition">2</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm border border-gray-300 text-gray-700 hover:bg-gray-100 transition">3</button>
+                    <span class="px-2">...</span>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm border border-gray-300 text-gray-700 hover:bg-gray-100 transition">8</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Consistent with other pages) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading-font">EternalElegance</h3>
+                    <p class="text-gray-400 mb-4">Curating exceptional timepieces since 1995.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#men" class="text-gray-400 hover:text-white transition">Men's Watches</a></li>
+                        <li><a href="#women" class="text-gray-400 hover:text-white transition">Women's Watches</a></li>
+                        <li><a href="#limited" class="text-gray-400 hover:text-white transition">Limited Editions</a></li>
+                        <li><a href="#accessories" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-bold mb-4">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Journal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">123 Watch Avenue</li>
+                        <li class="text-gray-400">New York, NY 10001</li>
+                        <li class="text-gray-400">+1 (555) 123-4567</li>
+                        <li class="text-gray-400">info@eternalelegance.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 EternalElegance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
