@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal | EternalElegance</title>
+    <meta name="description" content="Discover articles on watch care, brand histories, and investment insights from our luxury watch experts.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .category-chip:hover {
+            background-color: #f59e0b;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header (Consistent with other pages) -->
+    <header class="bg-black text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold heading-font">EternalElegance</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#collections" class="hover:text-amber-200 transition">Collections</a>
+                <a href="about.html" class="hover:text-amber-200 transition">About</a>
+                <a href="blog.html" class="text-amber-200 hover:text-amber-300 transition">Journal</a>
+                <a href="index.html#contact" class="hover:text-amber-200 transition">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <a href="#" class="hover:text-amber-200 transition">
+                    <i class="fas fa-search text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-amber-200 transition">
+                    <i class="fas fa-shopping-bag text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 flex items-center justify-center bg-gray-900 overflow-hidden">
+        <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+             alt="Vintage watchmaking tools" 
+             class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <div class="container mx-auto px-6 relative z-10 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 heading-font">The Journal</h1>
+            <p class="text-xl max-w-2xl mx-auto">Expert insights on horology, collecting, and watch care</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-16">
+        <div class="container mx-auto px-6">
+            <!-- Categories -->
+            <section class="mb-12">
+                <h2 class="sr-only">Categories</h2>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#" class="category-chip bg-white text-amber-600 border border-amber-600 px-4 py-2 rounded-full text-sm font-medium transition duration-300">All Articles</a>
+                    <a href="#" class="category-chip bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full text-sm font-medium transition duration-300 hover:border-amber-500 hover:text-amber-600">Care Tips</a>
+                    <a href="#" class="category-chip bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full text-sm font-medium transition duration-300 hover:border-amber-500 hover:text-amber-600">Brand History</a>
+                    <a href="#" class="category-chip bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full text-sm font-medium transition duration-300 hover:border-amber-500 hover:text-amber-600">Investment Guide</a>
+                    <a href="#" class="category-chip bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full text-sm font-medium transition duration-300 hover:border-amber-500 hover:text-amber-600">New Releases</a>
+                    <a href="#" class="category-chip bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-full text-sm font-medium transition duration-300 hover:border-amber-500 hover:text-amber-600">Collector Stories</a>
+                </div>
+            </section>
+
+            <!-- Featured Article -->
+            <section class="mb-20">
+                <div class="flex flex-col lg:flex-row gap-8 bg-white rounded-sm overflow-hidden shadow-lg">
+                    <div class="lg:w-1/2">
+                        <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                             alt="Watch movement closeup" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="lg:w-1/2 p-8 flex flex-col justify-center">
+                        <span class="text-sm text-amber-600 font-medium mb-2">FEATURED ARTICLE</span>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4 heading-font">The Evolution of Mechanical Movements</h2>
+                        <p class="text-gray-700 mb-6">From the earliest pocket watches to modern tourbillons, explore how mechanical watch movements have developed over centuries and what makes today's haute horlogerie so remarkable.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-6">
+                            <span>June 12, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>12 min read</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-amber-600">Brand History</span>
+                        </div>
+                        <a href="#" class="text-amber-600 hover:text-amber-700 font-medium transition flex items-center">
+                            Read Full Article
+                            <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article Grid -->
+            <section>
+                <h2 class="text-2xl font-bold mb-8 heading-font">Latest Articles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Article 1 -->
+                    <article class="article-card bg-white rounded-sm overflow-hidden shadow-md transition duration-300">
+                        <a href="#">
+                            <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Watch on leather strap" 
+                                 class="w-full h-48 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <div class="flex items-center text-xs text-gray-500 mb-3">
+                                <span>May 28, 2023</span>
+                                <span class="mx-2">•</span>
+                                <span>8 min read</span>
+                            </div>
+                            <a href="#">
+                                <h3 class="text-xl font-bold mb-3 heading-font">How to Care for Your Luxury Timepiece</h3>
+                            </a>
+                            <p class="text-gray-700 mb-4">Essential maintenance tips to keep your watch in pristine condition for generations to come, from cleaning to proper storage.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-amber-600 hover:text-amber-700 text-sm font-medium transition">Read More</a>
+                                <span class="text-xs px-3 py-1 bg-amber-100 text-amber-800 rounded-full">Care Tips</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Article 2 -->
+                    <article class="article-card bg-white rounded-sm overflow-hidden shadow-md transition duration-300">
+                        <a href="#">
+                            <img src="https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Vintage Rolex watch" 
+                                 class="w-full h-48 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <div class="flex items-center text-xs text-gray-500 mb-3">
+                                <span>May 15, 2023</span>
+                                <span class="mx-2">•</span>
+                                <span>10 min read</span>
+                            </div>
+                            <a href="#">
+                                <h3 class="text-xl font-bold mb-3 heading-font">The History of Iconic Watch Brands</h3>
+                            </a>
+                            <p class="text-gray-700 mb-4">From Patek Philippe to Rolex, explore the fascinating origins and evolution of the world's most prestigious watch manufacturers.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-amber-600 hover:text-amber-700 text-sm font-medium transition">Read More</a>
+                                <span class="text-xs px-3 py-1 bg-amber-100 text-amber-800 rounded-full">Brand History</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Article 3 -->
+                    <article class="article-card bg-white rounded-sm overflow-hidden shadow-md transition duration-300">
+                        <a href="#">
+                            <img src="https://images.pexels.com/photos/341523/pexels-photo-341523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Watch investment chart" 
+                                 class="w-full h-48 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <div class="flex items-center text-xs text-gray-500 mb-3">
+                                <span>April 30, 2023</span>
+                                <span class="mx-2">•</span>
+                                <span>15 min read</span>
+                            </div>
+                            <a href="#">
+                                <h3 class="text-xl font-bold mb-3 heading-font">Investing in Luxury Watches: A Complete Guide</h3>
+                            </a>
+                            <p class="text-gray-700 mb-4">Discover which timepieces have shown the best appreciation in value and learn how to build a profitable watch collection.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-amber-600 hover:text-amber-700 text-sm font-medium transition">Read More</a>
+                                <span class="text-xs px-3 py-1 bg-amber-100 text-amber-800 rounded-full">Investment Guide</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Article 4 -->
+                    <article class="article-card bg-white rounded-sm overflow-hidden shadow-md transition duration-300">
+                        <a href="#">
+                            <img src="https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="New watch release" 
+                                 class="w-full h-48 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <div class="flex items-center text-xs text-gray-500 mb-3">
+                                <span>April 18, 2023</span>
+                                <span class="mx-2">•</span>
+                                <span>6 min read</span>
+                            </div>
+                            <a href="#">
+                                <h3 class="text-xl font-bold mb-3 heading-font">Spring 2023: Most Anticipated Releases</h3>
+                            </a>
+                            <p class="text-gray-700 mb-4">From groundbreaking complications to stunning redesigns, we highlight the most exciting new watches coming this season.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-amber-600 hover:text-amber-700 text-sm font-medium transition">Read More</a>
+                                <span class="text-xs px-3 py-1 bg-amber-100 text-amber-800 rounded-full">New Releases</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Article 5 -->
+                    <article class="article-card bg-white rounded-sm overflow-hidden shadow-md transition duration-300">
+                        <a href="#">
+                            <img src="https://images.pexels.com/photos/3771086/pexels-photo-3771086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Watch collector" 
+                                 class="w-full h-48 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <div class="flex items-center text-xs text-gray-500 mb-3">
+                                <span>April 5, 2023</span>
+                                <span class="mx-2">•</span>
+                                <span>9 min read</span>
+                            </div>
+                            <a href="#">
+                                <h3 class="text-xl font-bold mb-3 heading-font">Collector Spotlight: The Heirloom Patek</h3>
+                            </a>
+                            <p class="text-gray-700 mb-4">The remarkable story of a 1940s Patek Philippe that's been passed down through three generations of a single family.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-amber-600 hover:text-amber-700 text-sm font-medium transition">Read More</a>
+                                <span class="text-xs px-3 py-1 bg-amber-100 text-amber-800 rounded-full">Collector Stories</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Article 6 -->
+                    <article class="article-card bg-white rounded-sm overflow-hidden shadow-md transition duration-300">
+                        <a href="#">
+                            <img src="https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Women's watch" 
+                                 class="w-full h-48 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <div class="flex items-center text-xs text-gray-500 mb-3">
+                                <span>March 22, 2023</span>
+                                <span class="mx-2">•</span>
+                                <span>7 min read</span>
+                            </div>
+                            <a href="#">
+                                <h3 class="text-xl font-bold mb-3 heading-font">Women in Watchmaking: Breaking Barriers</h3>
+                            </a>
+                            <p class="text-gray-700 mb-4">Celebrating the female watchmakers and designers who are reshaping the traditionally male-dominated world of haute horlogerie.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-amber-600 hover:text-amber-700 text-sm font-medium transition">Read More</a>
+                                <span class="text-xs px-3 py-1 bg-amber-100 text-amber-800 rounded-full">Brand History</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-16">
+                <nav class="flex items-center space-x-2">
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm bg-amber-600 text-white">1</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm border border-gray-300 text-gray-700 hover:bg-gray-100 transition">2</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm border border-gray-300 text-gray-700 hover:bg-gray-100 transition">3</button>
+                    <span class="px-2">...</span>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-sm border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-amber-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4 heading-font">Stay Informed</h2>
+            <p class="max-w-2xl mx-auto mb-8">Subscribe to receive new articles, watch insights, and exclusive content straight to your inbox.</p>
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-sm focus:outline-none text-black">
+                <button type="submit" class="bg-black hover:bg-gray-900 px-6 py-3 rounded-r-sm font-medium transition duration-300">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (Consistent with other pages) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading-font">EternalElegance</h3>
+                    <p class="text-gray-400 mb-4">Curating exceptional timepieces since 1995.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html#men" class="text-gray-400 hover:text-white transition">Men's Watches</a></li>
+                        <li><a href="products.html#women" class="text-gray-400 hover:text-white transition">Women's Watches</a></li>
+                        <li><a href="products.html#limited" class="text-gray-400 hover:text-white transition">Limited Editions</a></li>
+                        <li><a href="products.html#accessories" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-bold mb-4">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="blog.html" class="text-amber-400 hover:text-amber-300 transition">Journal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">123 Watch Avenue</li>
+                        <li class="text-gray-400">New York, NY 10001</li>
+                        <li class="text-gray-400">+1 (555) 123-4567</li>
+                        <li class="text-gray-400">info@eternalelegance.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 EternalElegance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
