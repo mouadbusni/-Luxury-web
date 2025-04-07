@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EternalElegance | Luxury Watches</title>
+    <meta name="description" content="Discover timeless luxury watches for collectors and enthusiasts. Shop iconic brands, limited editions, and premium accessories.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-black text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold heading-font">EternalElegance</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#collections" class="hover:text-amber-200 transition">Collections</a>
+                <a href="#about" class="hover:text-amber-200 transition">About</a>
+                <a href="#blog" class="hover:text-amber-200 transition">Journal</a>
+                <a href="#contact" class="hover:text-amber-200 transition">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <a href="#" class="hover:text-amber-200 transition">
+                    <i class="fas fa-search text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-amber-200 transition">
+                    <i class="fas fa-shopping-bag text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
+        <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+             alt="Luxury watch on black leather strap" 
+             class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <div class="container mx-auto px-6 relative z-10 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 heading-font">Discover Timeless Elegance</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Explore our exclusive collection of handcrafted luxury watches from the world's most prestigious brands.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#collections" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-sm font-medium transition duration-300">Shop Now</a>
+                <a href="#about" class="border border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-sm font-medium transition duration-300">Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section id="collections" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 heading-font">Our Collections</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Men's Collection -->
+                <div class="group relative overflow-hidden">
+                    <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Men's luxury watch" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <a href="#" class="text-white text-lg font-medium border-b border-white pb-1">Men's Watches</a>
+                    </div>
+                </div>
+                
+                <!-- Women's Collection -->
+                <div class="group relative overflow-hidden">
+                    <img src="https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Women's luxury watch" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <a href="#" class="text-white text-lg font-medium border-b border-white pb-1">Women's Watches</a>
+                    </div>
+                </div>
+                
+                <!-- Limited Editions -->
+                <div class="group relative overflow-hidden">
+                    <img src="https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Limited edition luxury watch" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <a href="#" class="text-white text-lg font-medium border-b border-white pb-1">Limited Editions</a>
+                    </div>
+                </div>
+                
+                <!-- Accessories -->
+                <div class="group relative overflow-hidden">
+                    <img src="https://images.pexels.com/photos/341523/pexels-photo-341523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Watch accessories" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <a href="#" class="text-white text-lg font-medium border-b border-white pb-1">Accessories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold mb-6 heading-font">Our Heritage</h2>
+                    <p class="text-gray-700 mb-4">Founded in 1995, EternalElegance has been curating the world's finest timepieces for collectors and enthusiasts alike. Our passion for horology drives us to seek out only the most exceptional watches.</p>
+                    <p class="text-gray-700 mb-6">Each piece in our collection is hand-selected for its craftsmanship, heritage, and timeless design. We partner with renowned brands and independent watchmakers to offer a diverse range of styles.</p>
+                    <a href="#" class="text-amber-600 font-medium hover:text-amber-700 transition">Learn more about our story →</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Watchmaker crafting a timepiece" 
+                         class="w-full rounded-sm shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Product -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Featured luxury watch" 
+                         class="w-full rounded-sm shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <span class="text-sm text-amber-600 font-medium">LIMITED EDITION</span>
+                    <h2 class="text-3xl font-bold mb-4 heading-font">The Chronograph Master</h2>
+                    <p class="text-gray-700 mb-6">This exceptional timepiece features a hand-wound mechanical movement with 72-hour power reserve. The 42mm case is crafted from 18k rose gold with a sapphire crystal case back showcasing the intricate movement.</p>
+                    <div class="mb-6">
+                        <span class="text-2xl font-bold">$24,500</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-sm font-medium transition duration-300">Add to Cart</button>
+                        <button class="border border-black hover:bg-gray-100 text-black px-8 py-3 rounded-sm font-medium transition duration-300">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview -->
+    <section id="blog" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 heading-font">From Our Journal</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Watch care tips" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">June 15, 2023</span>
+                        <h3 class="text-xl font-bold mb-2 heading-font">How to Care for Your Luxury Timepiece</h3>
+                        <p class="text-gray-700 mb-4">Learn the essential maintenance tips to keep your watch in pristine condition for generations to come.</p>
+                        <a href="#" class="text-amber-600 font-medium hover:text-amber-700 transition">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Watch history" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">May 28, 2023</span>
+                        <h3 class="text-xl font-bold mb-2 heading-font">The History of Iconic Watch Brands</h3>
+                        <p class="text-gray-700 mb-4">Explore the fascinating origins and evolution of the world's most prestigious watch manufacturers.</p>
+                        <a href="#" class="text-amber-600 font-medium hover:text-amber-700 transition">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Watch investment" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">April 10, 2023</span>
+                        <h3 class="text-xl font-bold mb-2 heading-font">Investing in Luxury Watches</h3>
+                        <p class="text-gray-700 mb-4">Discover which timepieces have shown the best appreciation in value over the past decade.</p>
+                        <a href="#" class="text-amber-600 font-medium hover:text-amber-700 transition">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="border border-black hover:bg-black hover:text-white text-black px-8 py-3 rounded-sm font-medium transition duration-300">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-black text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 heading-font">Client Testimonials</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-900 p-8 rounded-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400 text-2xl mr-2">★★★★★</div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"The attention to detail in their collection is unmatched. My Patek Philippe arrived in perfect condition with all documentation."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Wilson" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">James Wilson</h4>
+                            <p class="text-sm text-gray-400">Collector since 2015</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-900 p-8 rounded-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400 text-2xl mr-2">★★★★★</div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"I was looking for the perfect anniversary gift and their team helped me find an exquisite Rolex that my husband adores."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-400">First-time buyer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-900 p-8 rounded-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400 text-2xl mr-2">★★★★★</div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"As an investor, I appreciate their market insights. The limited edition Audemars Piguet they recommended has already appreciated 20%."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael Chen" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-sm text-gray-400">Investor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-amber-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4 heading-font">Join Our Community</h2>
+            <p class="max-w-2xl mx-auto mb-8">Subscribe to receive updates on new arrivals, exclusive events, and expert watch insights.</p>
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-sm focus:outline-none text-black">
+                <button type="submit" class="bg-black hover:bg-gray-900 px-6 py-3 rounded-r-sm font-medium transition duration-300">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading-font">EternalElegance</h3>
+                    <p class="text-gray-400 mb-4">Curating exceptional timepieces since 1995.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Men's Watches</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Women's Watches</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Limited Editions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-bold mb-4">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Journal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">123 Watch Avenue</li>
+                        <li class="text-gray-400">New York, NY 10001</li>
+                        <li class="text-gray-400">+1 (555) 123-4567</li>
+                        <li class="text-gray-400">info@eternalelegance.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 EternalElegance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
