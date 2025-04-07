@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronograph Master | EternalElegance</title>
+    <meta name="description" content="The Chronograph Master features a hand-wound mechanical movement with 72-hour power reserve. 42mm case crafted from 18k rose gold.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .gallery-image:hover {
+            transform: scale(1.03);
+        }
+        .specs-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header (Consistent with other pages) -->
+    <header class="bg-black text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold heading-font">EternalElegance</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#collections" class="hover:text-amber-200 transition">Collections</a>
+                <a href="about.html" class="hover:text-amber-200 transition">About</a>
+                <a href="index.html#blog" class="hover:text-amber-200 transition">Journal</a>
+                <a href="index.html#contact" class="hover:text-amber-200 transition">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <a href="#" class="hover:text-amber-200 transition">
+                    <i class="fas fa-search text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-amber-200 transition">
+                    <i class="fas fa-shopping-bag text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="py-4 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-amber-600">
+                            <i class="fas fa-home mr-2"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 mx-2"></i>
+                            <a href="products.html" class="ml-1 text-sm font-medium text-gray-700 hover:text-amber-600 md:ml-2">Collections</a>
+                        </div>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 mx-2"></i>
+                            <span class="ml-1 text-sm font-medium text-amber-600 md:ml-2">Chronograph Master</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Product Section -->
+    <main class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Product Gallery -->
+                <div class="lg:w-1/2">
+                    <!-- Main Image -->
+                    <div class="mb-4 rounded-sm overflow-hidden">
+                        <img id="mainImage" src="https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                             alt="Chronograph Master watch - front view" 
+                             class="w-full h-auto object-cover transition duration-300">
+                    </div>
+                    
+                    <!-- Thumbnail Gallery -->
+                    <div class="grid grid-cols-4 gap-2">
+                        <button onclick="changeImage('https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg')" 
+                                class="gallery-image overflow-hidden rounded-sm border-2 border-transparent hover:border-amber-500 transition duration-300">
+                            <img src="https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Chronograph Master - front view" 
+                                 class="w-full h-20 object-cover">
+                        </button>
+                        <button onclick="changeImage('https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg')" 
+                                class="gallery-image overflow-hidden rounded-sm border-2 border-transparent hover:border-amber-500 transition duration-300">
+                            <img src="https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Chronograph Master - side view" 
+                                 class="w-full h-20 object-cover">
+                        </button>
+                        <button onclick="changeImage('https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg')" 
+                                class="gallery-image overflow-hidden rounded-sm border-2 border-transparent hover:border-amber-500 transition duration-300">
+                            <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Chronograph Master - movement detail" 
+                                 class="w-full h-20 object-cover">
+                        </button>
+                        <button onclick="changeImage('https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg')" 
+                                class="gallery-image overflow-hidden rounded-sm border-2 border-transparent hover:border-amber-500 transition duration-300">
+                            <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Chronograph Master - on wrist" 
+                                 class="w-full h-20 object-cover">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="lg:w-1/2">
+                    <div class="mb-6">
+                        <span class="text-sm text-amber-600 font-medium">LIMITED EDITION</span>
+                        <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-3 heading-font">Chronograph Master</h1>
+                        <div class="flex items-center mb-4">
+                            <div class="text-amber-400 text-sm">★★★★★</div>
+                            <span class="text-gray-500 text-sm ml-2">(24 reviews)</span>
+                            <a href="#reviews" class="text-amber-600 hover:text-amber-700 text-sm ml-4 transition">View all reviews</a>
+                        </div>
+                        <div class="text-3xl font-bold mb-6">$24,500</div>
+                        <p class="text-gray-700 mb-6">The Chronograph Master is a stunning example of precision engineering and timeless design. Crafted from the finest materials, this limited edition timepiece features a hand-wound mechanical movement with 72-hour power reserve and a sapphire crystal case back showcasing the intricate movement.</p>
+                        
+                        <!-- Color Selection -->
+                        <div class="mb-6">
+                            <h3 class="text-sm font-bold mb-2">CASE MATERIAL</h3>
+                            <div class="flex space-x-2">
+                                <button class="w-10 h-10 rounded-full border-2 border-gray-300 focus:border-amber-500 flex items-center justify-center bg-amber-100">
+                                    <span class="sr-only">18k Rose Gold</span>
+                                </button>
+                                <button class="w-10 h-10 rounded-full border-2 border-gray-300 focus:border-amber-500 flex items-center justify-center bg-gray-200">
+                                    <span class="sr-only">Platinum</span>
+                                </button>
+                                <button class="w-10 h-10 rounded-full border-2 border-gray-300 focus:border-amber-500 flex items-center justify-center bg-gray-800">
+                                    <span class="sr-only">Black Ceramic</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Strap Selection -->
+                        <div class="mb-6">
+                            <h3 class="text-sm font-bold mb-2">STRAP</h3>
+                            <div class="flex space-x-2">
+                                <button class="px-4 py-2 border border-gray-300 rounded-sm focus:border-amber-500 focus:bg-amber-50">Alligator Black</button>
+                                <button class="px-4 py-2 border border-gray-300 rounded-sm focus:border-amber-500 focus:bg-amber-50">Alligator Brown</button>
+                                <button class="px-4 py-2 border border-gray-300 rounded-sm focus:border-amber-500 focus:bg-amber-50">Stainless Steel</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Add to Cart -->
+                        <div class="mb-8">
+                            <div class="flex items-center mb-4">
+                                <button class="w-10 h-10 border border-gray-300 rounded-l-sm flex items-center justify-center hover:bg-gray-100 transition">-</button>
+                                <input type="number" value="1" min="1" class="w-16 h-10 border-t border-b border-gray-300 text-center">
+                                <button class="w-10 h-10 border border-gray-300 rounded-r-sm flex items-center justify-center hover:bg-gray-100 transition">+</button>
+                                <button class="ml-4 bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-sm font-medium transition duration-300 flex-grow max-w-xs">
+                                    Add to Cart
+                                </button>
+                            </div>
+                            <button class="w-full border border-black hover:bg-gray-100 text-black px-8 py-3 rounded-sm font-medium transition duration-300 flex items-center justify-center">
+                                <i class="far fa-heart mr-2"></i> Add to Wishlist
+                            </button>
+                        </div>
+                        
+                        <!-- Product Meta -->
+                        <div class="text-sm text-gray-500 space-y-2">
+                            <div class="flex">
+                                <span class="w-24 font-medium">SKU:</span>
+                                <span>EE-CM-18RG</span>
+                            </div>
+                            <div class="flex">
+                                <span class="w-24 font-medium">Availability:</span>
+                                <span class="text-green-600">In Stock (3 remaining)</span>
+                            </div>
+                            <div class="flex">
+                                <span class="w-24 font-medium">Delivery:</span>
+                                <span>2-3 business days via FedEx Priority</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="mt-20 border-b border-gray-200">
+                <nav class="flex space-x-8">
+                    <button class="py-4 px-1 border-b-2 border-amber-500 font-medium text-amber-600">Description</button>
+                    <button class="py-4 px-1 border-b-2 border-transparent font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">Specifications</button>
+                    <button class="py-4 px-1 border-b-2 border-transparent font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">Shipping & Returns</button>
+                    <button id="reviews" class="py-4 px-1 border-b-2 border-transparent font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">Reviews (24)</button>
+                </nav>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="py-8">
+                <!-- Description -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 heading-font">Masterful Chronograph</h2>
+                    <p class="text-gray-700 mb-6">The Chronograph Master represents the pinnacle of our limited edition collection, blending traditional watchmaking techniques with contemporary design. Each component is meticulously finished by hand, from the guilloché dial to the hand-beveled bridges of the movement.</p>
+                    <p class="text-gray-700 mb-6">The 18k rose gold case measures 42mm in diameter and features both polished and brushed finishes, creating a striking play of light. The sapphire crystal case back offers a view of the beautifully decorated movement, including the column wheel chronograph mechanism.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 heading-font">Dial Details</h3>
+                            <p class="text-gray-700">Silver guilloché dial with applied rose gold indices, small seconds at 9 o'clock, 30-minute counter at 3 o'clock, and tachymeter scale on the outer rim.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 heading-font">Movement</h3>
+                            <p class="text-gray-700">Manual-winding chronograph movement with 72-hour power reserve, 21,600 vibrations per hour, and 23 jewels. Certified chronometer.</p>
+                        </div>
+                    </div>
+                    <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                         alt="Chronograph Master movement detail" 
+                         class="w-full rounded-sm shadow-md">
+                </div>
+
+                <!-- Specifications (Hidden by default) -->
+                <div class="hidden">
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full specs-table">
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Reference Number</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">EE-CM-18RG</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Case Material</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">18k Rose Gold</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Case Diameter</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">42mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Case Thickness</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">12.8mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Water Resistance</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">50 meters</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Movement</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">Manual-winding chronograph</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Power Reserve</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">72 hours</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Functions</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">Hours, minutes, small seconds, chronograph</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Strap</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">Hand-stitched alligator leather</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Clasp</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">18k rose gold tang buckle</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Warranty</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">5 years</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <section class="mt-20">
+                <h2 class="text-2xl font-bold mb-8 heading-font">You May Also Like</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Related Product 1 -->
+                    <div class="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Vintage Diver watch" 
+                                 class="w-full h-full object-cover transition duration-500">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Vintage Diver</h3>
+                            <p class="text-gray-600 text-sm mb-2">1967 Restoration</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$32,000</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Related Product 2 -->
+                    <div class="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Grand Complication watch" 
+                                 class="w-full h-full object-cover transition duration-500">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Grand Complication</h3>
+                            <p class="text-gray-600 text-sm mb-2">Perpetual Calendar</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$68,500</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Related Product 3 -->
+                    <div class="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Classic Automatic watch" 
+                                 class="w-full h-full object-cover transition duration-500">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Classic Automatic</h3>
+                            <p class="text-gray-600 text-sm mb-2">40mm Stainless Steel</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$9,800</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Related Product 4 -->
+                    <div class="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="https://images.pexels.com/photos/341523/pexels-photo-341523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Aviator Chronograph watch" 
+                                 class="w-full h-full object-cover transition duration-500">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1 heading-font">Aviator Chronograph</h3>
+                            <p class="text-gray-600 text-sm mb-2">Pilot's Watch</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">$12,500</span>
+                                <button class="text-amber-600 hover:text-amber-700 transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer (Consistent with other pages) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 heading-font">EternalElegance</h3>
+                    <p class="text-gray-400 mb-4">Curating exceptional timepieces since 1995.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html#men" class="text-gray-400 hover:text-white transition">Men's Watches</a></li>
+                        <li><a href="products.html#women" class="text-gray-400 hover:text-white transition">Women's Watches</a></li>
+                        <li><a href="products.html#limited" class="text-gray-400 hover:text-white transition">Limited Editions</a></li>
+                        <li><a href="products.html#accessories" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-bold mb-4">Information</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="index.html#blog" class="text-gray-400 hover:text-white transition">Journal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">123 Watch Avenue</li>
+                        <li class="text-gray-400">New York, NY 10001</li>
+                        <li class="text-gray-400">+1 (555) 123-4567</li>
+                        <li class="text-gray-400">info@eternalelegance.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 EternalElegance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+</body>
+</html>
